@@ -1,0 +1,18 @@
+.user-info__button-edit,
+  #edit {
+    width: 38px;
+    height: 18px;
+
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 980px) {
+    #edit {
+      position: static;
+    }
+  }
+  
