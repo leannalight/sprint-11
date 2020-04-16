@@ -87,5 +87,6 @@ function imagePopupClose (event) {
 
 editButton.addEventListener('click', userPopup.show.bind(userPopup));
 imageCloseButton.addEventListener('click', imagePopupClose);
+console.log('Hello, Webpack!')
 
 
