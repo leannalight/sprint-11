@@ -1,4 +1,4 @@
-class UserPopup extends Popup {
+export class UserPopup extends Popup {
     constructor({elem, userInfo, api}) {
         super(elem);
 

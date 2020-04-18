@@ -1,4 +1,4 @@
-
+export default function mainScript() {
   
 const placesList = document.querySelector('.places-list');
 const popupForm = document.querySelector('.popup');
@@ -85,7 +85,6 @@ function imagePopupClose (event) {
 editButton.addEventListener('click', userPopup.show.bind(userPopup));
 imageCloseButton.addEventListener('click', imagePopupClose);
 
-
-
+};
 
 

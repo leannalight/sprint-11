@@ -1,4 +1,4 @@
-class PlacePopup extends Popup {
+export class PlacePopup extends Popup {
     constructor({elem, plusButton, buttonSave, name, link, card, cardList}) {
       super(elem);
 

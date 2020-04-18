@@ -1,4 +1,4 @@
-class Api {
+export class Api {
     constructor(groupId, token) {
         this.baseUrl = `https://praktikum.tk/${groupId}`;
         this.token = token;
