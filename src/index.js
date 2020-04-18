@@ -8,7 +8,7 @@ import {PlacePopup} from "./scripts/PlacePopup.js";
 import {UserInfo} from "./scripts/UserInfo.js";
 import {CardList} from "./scripts/CardList.js";
 import {Card} from "./scripts/Card.js";
-import mainScript from "./scripts/script.js";
+import * as obj from './scripts/script.js'
 
 
 console.log(Api);
@@ -19,4 +19,4 @@ console.log(Popup);
 console.log(UserInfo);
 console.log(CardList);
 console.log(Card);
-console.log(mainScript);
+console.log(obj);

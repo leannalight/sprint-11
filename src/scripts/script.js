@@ -1,4 +1,4 @@
-export default function mainScript() {
+export function mainScript() {
   
 const placesList = document.querySelector('.places-list');
 const popupForm = document.querySelector('.popup');
