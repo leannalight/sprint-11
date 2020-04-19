@@ -13,13 +13,13 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{   // тут описываются правила
-                    test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-                    use: { loader: "babel-loader" }, // весь JS обрабатывается пакетом babel-loader
-                    exclude: /node_modules/ // исключает папку node_modules
+        rules: [{   
+                    test: /\.js$/, 
+                    use: { loader: "babel-loader" },
+                    exclude: /node_modules/ 
                 },
                 {
-                    test: /\.css$/i, // применять это правило только к CSS-файлам
+                    test: /\.css$/i, 
                     use: [
                         (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
                         'css-loader', 
@@ -32,7 +32,10 @@ module.exports = {
                         'file-loader?name=./images/[name].[ext]', 
                         {
                           loader: 'image-webpack-loader',
-                          options: {},
+                          options: {
+                              bypassOnDebug: true,
+                              disable: true,
+                          },
                         },
                       ],
                 },
@@ -54,10 +57,9 @@ module.exports = {
                 canPrint: true
         }),
             new HtmlWebpackPlugin({
-                // Означает, что:
-                inject: false, // стили НЕ нужно прописывать внутри тегов
-                template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-                filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
+                inject: false, 
+                template: './src/index.html', 
+                filename: 'index.html'
               }),
             new WebpackMd5Hash(),
             new webpack.DefinePlugin({

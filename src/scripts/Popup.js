@@ -1,3 +1,5 @@
+import {FormValidator} from "./FormValidator.js";
+
 export class Popup {
     constructor(elem) {
         this.elem = elem;
