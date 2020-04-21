@@ -2,7 +2,7 @@
 git and webpack
 
 ## current version:
-git tag -a v0.0.2 -m "my second version"
+git tag -a v0.0.2 -m "my version v0.0.2"
 
 [**link to this project on github pages**](https://leannalight.github.io/sprint-11/)
 
@@ -34,11 +34,9 @@ Webpack
 
 ## instructions on how to deploy the project
 
-Git
-1.	Create a repository on GitHub and copy it to your computer. Transfer the project work code No. 9 to the local repository. Run git push origin master - all your files will be hosted on the master branch on GitHub. Before you start writing code, create a new branch and switch to it. Give the branch a name - develop.
+1. Create a repository on GitHub and copy it to your computer. Transfer the project work code No. 9 to the local repository. Run git push origin master - all your files will be hosted on the master branch on GitHub. Before you start writing code, create a new branch and switch to it. Give the branch a name - develop.
 
-Build a project
-2. Configure assembly of build and dev.
+2. Build a project. Configure assembly of build and dev.
 3. Configure hashing of CSS and JS files.
 4. Create an empty file named .nojekyll in the project root. By default, GitHub Pages during assembly ignores files whose name begins with the underscore _, which is how many BEM files begin. The .nojekyll file solves this problem.
 Set up automatic updating of the project page when saving files (hot reload).
@@ -52,8 +50,7 @@ The first thing to do is install two packages:
 npm i style-loader --save-dev # if this package is not available, then styles added via @import will not get into the final assembly
 npm i optimize-css-assets-webpack-plugin --save-dev # this plugin is needed for additional css optimization
 
-8. For static images connected via an attribute in the img tag, specify the paths like this:
-<img src = "<% = require ('./ images / logo.svg').default %>">
+8. For static images connected via an attribute in the img tag, specify the paths like this: img src = "<% = require ('./ images / logo.svg').default %>"
 
 9. Add the settings for downloading fonts to the rules section of the webpack.config.js file:
 {

@@ -15,7 +15,7 @@ module.exports = {
     module: {
         rules: [{   
                     test: /\.js$/, 
-                    use: { loader: "babel-loader" },
+                    use: { loader: 'babel-loader' },
                     exclude: /node_modules/ 
                 },
                 {
@@ -27,7 +27,7 @@ module.exports = {
                     ] 
                 },
                 {
-                    test: /\.(gif|png|jpe?g|svg)$/i,
+                    test: /\.(gif|png|jpe?g|ico|svg)$/i,
                     use: [
                         'file-loader?name=./images/[name].[ext]', 
                         {
@@ -47,7 +47,7 @@ module.exports = {
         },
         plugins: [ 
             
-            new MiniCssExtractPlugin({filename: 'index.[contenthash].css',}),
+            new MiniCssExtractPlugin({filename: 'index.[contenthash].css'}),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
                 cssProcessor: require('cssnano'),
@@ -63,7 +63,7 @@ module.exports = {
               }),
             new WebpackMd5Hash(),
             new webpack.DefinePlugin({
-                'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+                'TEST': JSON.stringify(isDev ? 'http://praktikum.tk': 'https://praktikum.tk')
                 })
             ]
 };
