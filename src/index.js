@@ -1,6 +1,3 @@
-const serverUrl = TEST;
-console.log(serverUrl);
-
 import './pages/index.css';
 import {Api} from './scripts/Api.js';
 import {FormValidator} from './scripts/FormValidator.js';
@@ -19,7 +16,7 @@ console.log(Popup);
 console.log(UserInfo);
 console.log(CardList);
 console.log(Card);
-
+console.log(URL);
 
 // Переменные 
 

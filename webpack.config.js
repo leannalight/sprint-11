@@ -63,7 +63,12 @@ module.exports = {
               }),
             new WebpackMd5Hash(),
             new webpack.DefinePlugin({
-                'TEST': JSON.stringify(isDev ? 'http://praktikum.tk': 'https://praktikum.tk')
-                })
-            ]
+                'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+                'URL': JSON.stringify(isDev ? 'http://praktikum.tk' : 'https://praktikum.tk')
+                }),
+                
+            new webpack.SourceMapDevToolPlugin({}),
+            ],
+            devtool: false,
+            
 };

@@ -2,7 +2,7 @@
 git and webpack
 
 ## current version:
-git tag -a v0.0.2 -m "my version v0.0.2"
+git tag -a v0.0.3 -m "my version v0.0.3"
 
 [**link to this project on github pages**](https://leannalight.github.io/sprint-11/)
 
