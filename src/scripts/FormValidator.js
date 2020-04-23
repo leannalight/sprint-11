@@ -1,8 +1,7 @@
-class FormValidator {
+export class FormValidator {
   constructor(form, button) {
     this.form = form;
     this.button = button;
-    //this.submitButton = document.querySelector('#submit');
     
     this.setEventListeners();
   }

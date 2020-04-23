@@ -1,22 +1,39 @@
-// Переменные
+import './pages/index.css';
+import {Api} from './scripts/Api.js';
+import {FormValidator} from './scripts/FormValidator.js';
+import {Popup} from './scripts/Popup.js';
+import {UserPopup} from './scripts/UserPopup.js';
+import {PlacePopup} from './scripts/PlacePopup.js';
+import {UserInfo} from './scripts/UserInfo.js';
+import {CardList} from './scripts/CardList.js';
+import {Card} from './scripts/Card.js';
 
-const api = new Api('cohort9', '690ae7e8-3b88-4011-8a29-50027ad59557');
+console.log(Api);
+console.log(FormValidator);
+console.log(UserPopup);
+console.log(PlacePopup);
+console.log(Popup);
+console.log(UserInfo);
+console.log(CardList);
+console.log(Card);
+console.log(URL);
+
+// Переменные 
 
 const placesList = document.querySelector('.places-list');
 const popupForm = document.querySelector('.popup');
 const plusButton = document.querySelector('.user-info__button');
 const placeFormElement = document.querySelector('#form');
 const submitButton = document.querySelector('#submit');
-
 const profilePopup = document.querySelector('#profile-popup');
 const profileFormElement = document.querySelector('#form2');
 const submitButtonProfile = document.querySelector('#submit2');
 const editButton = document.querySelector('#edit');
-
 const imagePopup = document.querySelector('#image-popup');
 const imageCloseButton = document.querySelector('#image-close');
 const modalImg = document.querySelector('.popup__img-zoom');
 
+const api = new Api('cohort9', '690ae7e8-3b88-4011-8a29-50027ad59557');
 const card = new Card();
 
 // Отрисовка карточек
@@ -87,7 +104,6 @@ function imagePopupClose (event) {
 
 editButton.addEventListener('click', userPopup.show.bind(userPopup));
 imageCloseButton.addEventListener('click', imagePopupClose);
-
 
 
 
