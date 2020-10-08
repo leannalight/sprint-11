@@ -1,7 +1,7 @@
 {
-  "name": "sprint-11",
-  "version": "1.0.0",
-  "description": "git and webpack",
+  "name": "mesto-project-yandex",
+  "version": "3.0.0",
+  "description": "git and webpack, sprint-11",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",

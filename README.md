@@ -1,10 +1,10 @@
-# **sprint-11-mesto**
+# **Mesto-project-Yandex**
 git and webpack
 
 ## current version:
 git tag -a v0.0.3 -m "my version v0.0.3"
 
-[**link to this project on github pages**](https://leannalight.github.io/sprint-11/)
+[**link to this project on github pages**](https://leannalight.github.io/Mesto-project-Yandex/)
 
 In this project I completed tasks on git and webpack topics.
 
